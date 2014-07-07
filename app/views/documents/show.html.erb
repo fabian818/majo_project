@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= link_to @document.person.name, @document.person %>
+</p>
+
+<p>
+  <strong>Document type:</strong>
+  <%= link_to @document.document_type.name, @document.document_type %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @document.date %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @document.code %>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
